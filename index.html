@@ -10,15 +10,13 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -37,6 +35,7 @@
 
 <!-- HERO -->
 <header id="inicio" class="hero">
+  <div class="hero-overlay"></div>
   <div class="hero-content" data-aos="fade-up">
     <h1>Jairo Alberto Castellanos Serrano</h1>
     <p>Trayectoria, propuestas y compromiso con Colombia</p>
@@ -55,16 +54,9 @@
 
     <div class="bio-text" data-aos="fade-left">
       <p>
-        Abogado de la Universidad Libre. Inició su trayectoria política como
-        concejal de su municipio natal (2001–2003).
-      </p>
-      <p>
-        Fue diputado de la Asamblea Departamental de Norte de Santander
-        (2008–2011) y Alcalde de Toledo (2016–2019).
-      </p>
-      <p>
-        En 2022 fue elegido Senador de la República por la coalición
-        Centro Esperanza.
+        Abogado de la Universidad Libre. Concejal (2001–2003),
+        Diputado de Norte de Santander (2008–2011),
+        Alcalde de Toledo (2016–2019) y Senador de la República desde 2022.
       </p>
     </div>
   </div>
@@ -79,7 +71,6 @@
 <!-- TRAYECTORIA -->
 <section id="trayectoria" class="section bg-light">
   <h2 data-aos="fade-up">Trayectoria Política</h2>
-
   <div class="cards">
     <div class="card" data-aos="fade-up">Congreso de la República</div>
     <div class="card" data-aos="fade-up" data-aos-delay="150">Trabajo legislativo</div>
@@ -90,7 +81,6 @@
 <!-- PROPUESTAS -->
 <section id="propuestas" class="section">
   <h2 data-aos="fade-up">Propuestas</h2>
-
   <div class="cards">
     <div class="card" data-aos="zoom-in">Transparencia</div>
     <div class="card" data-aos="zoom-in" data-aos-delay="150">Desarrollo social</div>
@@ -101,11 +91,10 @@
 <!-- GALERÍA -->
 <section id="galeria" class="section bg-light">
   <h2 data-aos="fade-up">Galería</h2>
-
   <div class="gallery-grid">
-    <div class="gallery-item"><img src="images/imagen1.jpg" alt=""></div>
-    <div class="gallery-item"><img src="images/imagen2.jpg" alt=""></div>
-    <div class="gallery-item"><img src="images/imagen3.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/imagen1.jpg"></div>
+    <div class="gallery-item"><img src="images/imagen2.jpg"></div>
+    <div class="gallery-item"><img src="images/imagen3.jpg"></div>
   </div>
 </section>
 
@@ -113,7 +102,7 @@
 <section class="section apoyo">
   <div class="apoyo-box" data-aos="zoom-in">
     <h2>💚 Cuento con tu apoyo</h2>
-    <p>Tu respaldo es fundamental para seguir construyendo un mejor futuro para Colombia.</p>
+    <p>Tu respaldo es clave para seguir construyendo un mejor futuro para Colombia.</p>
 
     <div class="corazones">
       <i class="fas fa-heart"></i>
@@ -121,9 +110,10 @@
       <i class="fas fa-heart"></i>
     </div>
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEj7_pVMtGqgyDrxQ0e47Qycs8jmBiQUo70IUkMf2F8RbiSA/viewform"
-       target="_blank"
-       class="btn-apoyo">
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdEj7_pVMtGqgyDrxQ0e47Qycs8jmBiQUo70IUkMf2F8RbiSA/viewform"
+      target="_blank"
+      class="btn-apoyo">
       Quiero apoyar ✍️
     </a>
   </div>
@@ -131,40 +121,25 @@
 
 <!-- CONTACTO -->
 <section id="contacto" class="section">
-  <h2 data-aos="fade-up">Contacto y Ubicación</h2>
+  <h2 data-aos="fade-up">Contacto</h2>
 
-  <div class="contact-grid">
-    <div data-aos="fade-right">
-      <p><strong>📍 Dirección:</strong><br>
-        Calle 18 entre Avenida 2 Este y Avenida Libertadores
-      </p>
+  <p>📍 Calle 18 entre Avenida 2 Este y Avenida Libertadores</p>
+  <p>📧 jairo.castellanos@senado.gov.co</p>
 
-      <p><strong>📧 Correo:</strong><br>
-        <a href="mailto:jairo.castellanos@senado.gov.co">
-          jairo.castellanos@senado.gov.co
-        </a>
-      </p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/jairoalberto.castellanosserrano/" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/jairo22castellanos/" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
 
-      <a href="https://wa.me/573012192889" class="whatsapp-btn" target="_blank">
-        Contactar por WhatsApp
-      </a>
-
-      <div class="social-links">
-        <a href="https://www.facebook.com/jairoalberto.castellanosserrano/?locale=es_LA" target="_blank">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/jairo22castellanos/" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="map-container" data-aos="fade-left">
-      <iframe
-        src="https://www.google.com/maps?q=7.880167,-72.494444&z=16&output=embed"
-        loading="lazy">
-      </iframe>
-    </div>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=7.880167,-72.494444&z=16&output=embed"
+      loading="lazy">
+    </iframe>
   </div>
 </section>
 

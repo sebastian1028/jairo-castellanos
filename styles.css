@@ -2,8 +2,6 @@
   --verde-principal: #1b5e20;
   --verde-claro: #a5d6a7;
   --verde-fondo: #f1f5f1;
-  --whatsapp: #25d366;
-  --sombra: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 * {
@@ -17,97 +15,51 @@ body {
   color: #222;
 }
 
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 .navbar {
   background: var(--verde-principal);
+  padding: 16px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  color: white;
-  font-weight: 700;
-  font-size: 1.3rem;
 }
 
 .menu {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   list-style: none;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  position: relative;
 }
 
-.menu a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 3px;
-  background: var(--verde-claro);
-  transition: 0.3s;
-}
-
-.menu a:hover::after,
-.menu a.active::after {
-  width: 100%;
-}
-
-/* ================= HERO ================= */
+/* HERO — IMAGEN GARANTIZADA */
 .hero {
-  height: 85vh;
-  background:
-    var(--verde-claro)
-    url("../images/imagen4.jpg")
-    center bottom / contain
-    no-repeat;
+  min-height: 80vh;
+  background-color: var(--verde-claro);
+  background-image: url("images/imagen4.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 75%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 20px;
 }
 
 .hero-content {
-  background: rgba(0,0,0,0.35);
-  padding: 30px 40px;
+  background: rgba(0,0,0,0.45);
+  padding: 35px;
   border-radius: 20px;
   color: white;
   text-align: center;
-  max-width: 700px;
 }
 
-/* ================= BOTONES ================= */
-.btn,
-.whatsapp-btn {
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-  margin-top: 15px;
-}
-
-.btn {
-  background: white;
-  color: var(--verde-principal);
-}
-
-.whatsapp-btn {
-  background: var(--whatsapp);
-  color: white;
-}
-
-/* ================= SECCIONES ================= */
+/* SECCIONES */
 .section {
-  padding: 90px 20px;
+  padding: 80px 20px;
   max-width: 1100px;
   margin: auto;
 }
@@ -116,178 +68,50 @@ body {
   background: var(--verde-fondo);
 }
 
-h2 {
+/* APOYO */
+.apoyo-section {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: white;
+}
+
+.apoyo-box {
   text-align: center;
-  color: var(--verde-principal);
-  margin-bottom: 50px;
 }
 
-/* ================= GRIDS ================= */
-.bio-container,
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+.apoyo-btn {
+  background: white;
+  color: #1b5e20;
+  padding: 14px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
 }
 
-.cards,
+/* GALERÍA */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-/* ================= CARDS ================= */
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: var(--sombra);
-}
-
-/* ================= GALERÍA ================= */
-.gallery-item {
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: 20px;
+  gap: 20px;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  border-radius: 15px;
 }
 
-/* ================= PARTIDO ================= */
-.partido-sello {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  padding: 40px;
-}
-
-.partido-sello img {
-  height: 45px;
-}
-
-/* ================= REDES ================= */
-.social-links {
-  display: flex;
-  gap: 18px;
-  margin-top: 20px;
-}
-
-.social-links a {
-  width: 42px;
-  height: 42px;
-  background: var(--verde-principal);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ================= MAPA ================= */
-.map-container iframe {
-  width: 100%;
-  height: 380px;
-  border-radius: 20px;
-  border: none;
-}
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 .footer {
-  background: var(--verde-principal);
+  background: #1b5e20;
   color: white;
   text-align: center;
-  padding: 30px;
+  padding: 25px;
 }
 
-/* ================= WHATSAPP FLOAT ================= */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 55px;
-  height: 55px;
-  background: var(--whatsapp);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-}
-
-/* ================= MOBILE ================= */
+/* MOBILE */
 @media (max-width: 768px) {
-
-  .navbar {
-    padding: 14px 20px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .menu {
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  /* HERO MOBILE FIX */
   .hero {
-    height: 70vh;
-    background-position: center bottom;
-    background-size: auto 55%;
-    padding: 20px;
-  }
-
-  .hero-content {
-    padding: 22px 18px;
-    border-radius: 18px;
-  }
-
-  .hero-content h1 {
-    font-size: 1.4rem;
-    line-height: 1.3;
-  }
-
-  .hero-content p {
-    font-size: 0.95rem;
-  }
-
-  .section {
-    padding: 70px 20px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .bio-container,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .map-container iframe {
-    height: 300px;
-  }
-
-  .btn,
-  .whatsapp-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .whatsapp-float {
-    width: 50px;
-    height: 50px;
-    font-size: 1.6rem;
+    background-size: auto 60%;
+    min-height: 70vh;
   }
 }

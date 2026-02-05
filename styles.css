@@ -15,9 +15,10 @@
 
 body {
   color: #222;
+  background: #fff;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar {
   background: var(--verde-principal);
   display: flex;
@@ -30,7 +31,7 @@ body {
 }
 
 .logo {
-  color: white;
+  color: #fff;
   font-weight: 700;
   font-size: 1.3rem;
 }
@@ -42,9 +43,10 @@ body {
 }
 
 .menu a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   position: relative;
+  font-weight: 500;
 }
 
 .menu a::after {
@@ -55,7 +57,7 @@ body {
   width: 0;
   height: 3px;
   background: var(--verde-claro);
-  transition: 0.3s;
+  transition: width 0.3s ease;
 }
 
 .menu a:hover::after,
@@ -63,7 +65,7 @@ body {
   width: 100%;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
   height: 85vh;
   background:
@@ -76,35 +78,53 @@ body {
 }
 
 .hero-content {
-  background: rgba(0,0,0,0.35);
-  padding: 30px 40px;
-  border-radius: 20px;
-  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 35px 45px;
+  border-radius: 22px;
+  color: #fff;
   text-align: center;
-  max-width: 700px;
+  max-width: 720px;
 }
 
-/* BOTONES */
+.hero-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+/* ================= BOTONES ================= */
 .btn,
 .whatsapp-btn {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 12px 32px;
   border-radius: 30px;
   text-decoration: none;
-  margin-top: 15px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn {
-  background: white;
+  background: #fff;
   color: var(--verde-principal);
+}
+
+.btn:hover,
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra);
 }
 
 .whatsapp-btn {
   background: var(--whatsapp);
-  color: white;
+  color: #fff;
+  margin-top: 15px;
 }
 
-/* SECCIONES */
+/* ================= SECCIONES ================= */
 .section {
   padding: 90px 20px;
   max-width: 1100px;
@@ -119,14 +139,16 @@ h2 {
   text-align: center;
   color: var(--verde-principal);
   margin-bottom: 50px;
+  font-size: 2rem;
 }
 
-/* GRIDS */
+/* ================= GRIDS ================= */
 .bio-container,
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  align-items: center;
 }
 
 .cards,
@@ -136,19 +158,33 @@ h2 {
   gap: 25px;
 }
 
-/* CARDS */
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
+/* ================= BIO ================= */
+.bio-image img {
+  width: 100%;
+  border-radius: 25px;
   box-shadow: var(--sombra);
 }
 
-/* GALERÍA */
+.bio-text h3 {
+  margin-bottom: 15px;
+  color: var(--verde-principal);
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: var(--sombra);
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ================= GALERÍA ================= */
 .gallery-item {
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 22px;
 }
 
 .gallery-item img {
@@ -157,20 +193,20 @@ h2 {
   object-fit: cover;
 }
 
-/* PARTIDO */
+/* ================= PARTIDO ================= */
 .partido-sello {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 .partido-sello img {
   height: 45px;
 }
 
-/* REDES */
+/* ================= REDES ================= */
 .social-links {
   display: flex;
   gap: 18px;
@@ -181,30 +217,37 @@ h2 {
   width: 42px;
   height: 42px;
   background: var(--verde-principal);
-  color: white;
+  color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
 }
 
-/* MAPA */
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+/* ================= MAPA ================= */
 .map-container iframe {
   width: 100%;
   height: 380px;
-  border-radius: 20px;
+  border-radius: 22px;
   border: none;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 .footer {
   background: var(--verde-principal);
-  color: white;
+  color: #fff;
   text-align: center;
-  padding: 30px;
+  padding: 30px 20px;
+  font-size: 0.9rem;
 }
 
-/* WHATSAPP FLOAT */
+/* ================= WHATSAPP FLOAT ================= */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -212,19 +255,27 @@ h2 {
   width: 55px;
   height: 55px;
   background: var(--whatsapp);
-  color: white;
+  color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
+  z-index: 1000;
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .bio-container,
   .contact-grid {
     grid-template-columns: 1fr;
   }
-}
 
+  .menu {
+    gap: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+}
